@@ -7,8 +7,8 @@ function Hero (){
 
             <p>Browse through more than <span>1000 Exquisite restaurants</span> and find your favourite and get the experience you won't forget</p>
             <div>
-                <button>Search Now</button>
-                <button>Know More</button>
+                <button className="btnSN">Search Now</button>
+                <button className="btnKM">Know More</button>
             </div></div>
         </div>
     )

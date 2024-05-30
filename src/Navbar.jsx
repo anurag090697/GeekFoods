@@ -23,7 +23,7 @@ return (
             </a>
         </div>
         <div>
-            <button>Get Started</button>
+            <button className="btnGS">Get Started</button>
         </div>
     </nav>
 )
