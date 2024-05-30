@@ -1,0 +1,152 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+#root{
+  width: 100%;
+}
+.container{
+  width: 100%;
+  position: relative;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: rgb(0, 0, 65);
+  position: fixed;
+  top: 0;
+  z-index: 33;
+}
+nav > div{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logop{
+  width: 40px;
+}
+.hero{
+  background-image: url(assets/uniquerestaurantfeature.jpeg);
+  padding: 12.8rem ;
+  color: rgb(0, 0, 0);
+  background-size: cover;
+}
+.hero > div{
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.436);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.hero span{
+  color: rgb(255, 81, 0);
+  
+}
+.dataTop{
+  display: flex;
+  color: black;
+  position: relative;
+}
+.dataInfo{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 4rem;
+  width: 50%;
+  background-color: rgb(200, 200, 200);
+  
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+ 
+  position: absolute;
+  height: 100%;
+  right: 19px;
+}
+.dataTop img{
+  width: 50%;
+  height: 85%;
+  margin-top: 2rem;
+}
+.fontup{
+  z-index: 19;
+}
+.dpinfo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.dpinfo img{
+  width: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: black;
+}
+.profGrids{
+
+  display: grid;
+  
+  gap: 3rem;
+  margin: 4rem 3rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.profGrids > div{
+  width: 380px;
+}
+.profilePara{
+  background-color: rgb(240, 248, 255);
+  color: black;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  
+}
+.dataShow{
+background-color: whitesmoke;
+padding: 3rem;
+}
+footer{
+  background-color: rgb(185, 183, 181);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  text-align: center;
+}
+footer img{
+  width: 250px;
+  color: greenyellow;
+}
+.fonts{
+  display: flex;
+  gap: 2rem;
+  font-size: 30px;
+  color: black;
+}
+.fonts svg:hover{
+  color: rgb(63, 63, 63);
+  cursor: pointer;
+}
+.linksall{
+  display: flex;
+  gap: 2rem;
+  font-size: 18px;
+  
+}
+.linksall a{
+  color: black;
+}
+.lgp{
+  width: 400px;
+  color: rgb(78, 78, 78);
+}
