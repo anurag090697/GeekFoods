@@ -1,22 +1,23 @@
-*{
+/** @format */
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
-a{
+a {
   text-decoration: none;
-
 }
 
-#root{
+#root {
   width: 100%;
 }
-.container{
+.container {
   width: 100%;
   position: relative;
+  /* padding-top: 6rem; */
 }
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -28,43 +29,43 @@ nav{
   z-index: 33;
   color: white;
 }
-nav a{
+nav a {
   color: white;
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
 }
-nav a:hover{
+nav a:hover {
   color: blue;
 }
-nav > div{
+nav > div {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.btnGS{
-  padding: .5rem 1rem;
+.btnGS {
+  padding: 0.5rem 1rem;
   border-radius: 10px;
   background-color: dodgerblue;
   font-weight: 700;
   color: white;
   border: 2px solid dodgerblue;
 }
-.btnGS:hover{
+.btnGS:hover {
   background-color: white;
   color: blue;
 }
-.logop{
+.logop {
   width: 40px;
 }
-.hero{
+.hero {
   background-image: url(assets/uniquerestaurantfeature.jpeg);
-  padding: 12.8rem ;
+  padding: 12.8rem;
   color: rgb(0, 0, 0);
   background-size: cover;
 }
-.btnSN{
-  padding: .7rem 2rem;
+.btnSN {
+  padding: 0.7rem 2rem;
   margin-left: 1rem;
   background-color: aquamarine;
   color: rgb(8, 0, 241);
@@ -72,12 +73,12 @@ nav > div{
   border-radius: 10px;
   font-weight: 700;
 }
-.btnSN:hover{
+.btnSN:hover {
   background-color: rgb(255, 255, 255);
   /* margin: 2px solid rgb(236, 0, 0); */
 }
-.btnKM{
-  padding: .7rem 2rem;
+.btnKM {
+  padding: 0.7rem 2rem;
   margin-left: 1rem;
   background-color: blue;
   border-radius: 10px;
@@ -85,11 +86,11 @@ nav > div{
   border: 2px solid blue;
   color: white;
 }
-.btnKM:hover{
-background-color: white;
-color: black;
+.btnKM:hover {
+  background-color: white;
+  color: black;
 }
-.hero > div{
+.hero > div {
   width: 550px;
   background-color: rgba(255, 255, 255, 0.436);
   padding: 10px;
@@ -99,82 +100,100 @@ color: black;
   gap: 30px;
   text-align: center;
 }
-.hero span{
+.hero span {
   color: rgb(255, 81, 0);
-  
 }
-.hero p{
+.hero p {
   font-size: 18px;
 }
-.hero h1{
+.hero h1 {
   font-size: 40px;
 }
-.dataTop{
+.dataTop {
   display: flex;
   color: black;
   position: relative;
+  justify-content: end;
 }
-.dataInfo{
+.dataInfo {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
   padding: 4rem;
   width: 50%;
-  background-color: rgb(200, 200, 200);
-  
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
- 
-  position: absolute;
-  height: 100%;
+  background-color: rgb(228, 227, 227);
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+
+  position: relative;
+  height: 560px;
   right: 19px;
+  padding-left: 6rem;
+  color: rgb(87, 87, 87);
+  font-weight: 700;
 }
-.dataTop img{
+.dataInfo h2{
+  font-size: 32px;
+  font-weight: 800;
+  color: rgb(48, 48, 48);
+}
+/* .dataTop img {
   width: 50%;
   height: 85%;
   margin-top: 2rem;
+
+} */
+.fontup {
+  /* z-index: 19; */
+  position: relative;
 }
-.fontup{
-  z-index: 19;
+.fontup img {
+  width: 47dvw;
+  left: 4%;
+  top: 6%;
+  position: relative;
+  height: auto;
+  z-index: 4;
 }
-.dpinfo{
+.dpinfo {
   display: flex;
   align-items: center;
   gap: 10px;
   margin: 10px 0;
 }
-.dpinfo img{
+.dpinfo img {
   width: 80px;
   border-radius: 50%;
   object-fit: cover;
   background-color: black;
 }
-.profGrids{
+.profGrids {
   display: grid;
   /* column-fill: balance; */
   gap: 3rem;
   margin: 4rem 3rem;
   /* grid-template-columns: 1fr 1fr 1fr; */
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  
- 
 }
-.profGrids > div{
+.profGrids > div {
   /* width: 380px; */
 }
-.profilePara{
+.profilePara {
   background-color: rgb(240, 248, 255);
   color: black;
   padding: 1rem;
   border-radius: 15px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-.dataShow{
-background-color: whitesmoke;
-padding: 3rem;
+.dataShow {
+  background-color: whitesmoke;
+  padding: 3rem;
 }
-footer{
+footer {
   background-color: rgb(185, 183, 181);
   width: 100%;
   display: flex;
@@ -185,35 +204,248 @@ footer{
   padding: 3rem 0;
   text-align: center;
 }
-footer img{
+footer img {
   width: 250px;
   color: greenyellow;
 }
-.fonts{
+.fonts {
   display: flex;
   gap: 2rem;
   font-size: 30px;
   color: black;
 }
-.fonts svg:hover{
+.fonts svg:hover {
   color: rgb(63, 63, 63);
   cursor: pointer;
 }
-.linksall{
+.linksall {
   display: flex;
   gap: 2rem;
   font-size: 18px;
-  
 }
-.linksall a{
+.linksall a {
   color: black;
   font-weight: 700;
 }
-.linksall a:hover{
+.linksall a:hover {
   color: blue;
-  
 }
-.lgp{
+.lgp {
   width: 400px;
   color: rgb(78, 78, 78);
+}
+.showQuote {
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+.showQuote > div {
+  background-color: yellowgreen;
+  padding: 1rem;
+  border-radius: 12px;
+  color: rgb(0, 54, 155);
+  width: 100%;
+  font-size: 28px;
+  margin-top: 4rem;
+}
+.mkblue {
+  color: blue;
+}
+.showQuote > div > p {
+  color: rgb(255, 0, 0);
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 0, 0);
+}
+footer {
+  background-color: rgb(185, 183, 181);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  text-align: center;
+}
+footer img {
+  width: 250px;
+  color: greenyellow;
+}
+.fonts {
+  display: flex;
+  gap: 2rem;
+  font-size: 30px;
+  color: black;
+}
+.fonts svg:hover {
+  color: rgb(63, 63, 63);
+  cursor: pointer;
+}
+.linksall {
+  display: flex;
+  gap: 2rem;
+  font-size: 18px;
+}
+.linksall a {
+  color: black;
+  font-weight: 700;
+}
+.linksall a:hover {
+  color: blue;
+}
+.lgp {
+  width: 400px;
+  color: rgb(78, 78, 78);
+}
+
+.restaurantsList {
+  margin-top: 6rem;
+}
+.goldstar {
+  color: goldenrod;
+}
+.whitestar {
+  color: rgb(91, 91, 91);
+}
+
+.cafeCard {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  width: 380px;
+  height: 250px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.restaurantsListcards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 2rem;
+}
+.cardbtm {
+  background-color: rgb(228, 228, 228);
+  /* width: 100%; */
+  padding: 8px;
+  border-end-end-radius: 12px;
+  border-end-start-radius: 12px;
+  padding-left: 1rem;
+}
+.cardtop {
+  padding: 1.8rem;
+}
+.cardbtm > a {
+  color: blue;
+  font-weight: 500;
+}
+.cardbtm p {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.cardbtm svg {
+  color: rgb(0, 155, 8);
+  margin-right: 0.5rem;
+}
+.cardbtm > a:hover {
+  color: rgb(126, 126, 255);
+}
+
+.inputform {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 3rem;
+}
+#nameinput {
+  padding: 4px 10px;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid rgb(171, 171, 239);
+}
+#nameinput:focus {
+  border-color: greenyellow;
+  outline-color: rgb(0, 0, 135);
+}
+#starinput {
+  border: 2px solid rgb(111, 111, 203);
+  text-align: center;
+  padding: 1px;
+  border-radius: 5px;
+  font-size: large;
+}
+
+.button-8 {
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #39739d;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans",
+    sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-8:hover,
+.button-8:focus {
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+.button-8:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+}
+
+.button-8:active {
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
+}
+.smolbtn {
+  padding: 6px;
+  background-color: rgb(188, 239, 255);
+  border-radius: 5px;
+  border: 1px solid rgb(22, 121, 208);
+  color: rgb(111, 111, 111);
+  font-weight: 600;
+}
+.smolbtn:hover {
+  background-color: #39739d;
+}
+.active {
+  background-color: rgb(0, 183, 255);
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 79, 149);
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+.pagination {
+  width: fit-content;
+  margin: 3rem auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

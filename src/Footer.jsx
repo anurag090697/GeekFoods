@@ -7,7 +7,7 @@ function Footer() {
     return (
         <footer>
             <div className='lgp'>
-                <img src="src/assets/logo-3-1.svg" alt="Logo" />
+                <img src="..\public\assets\logo-3-1.svg" alt="Logo" />
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum itaque neque.</p>
             </div>
             <div className='linksall'>

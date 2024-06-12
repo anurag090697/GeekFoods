@@ -1,31 +1,25 @@
-function Navbar(){
-return (
+/** @format */
+
+import { Link } from "react-router-dom";
+
+function Navbar() {
+  return (
     <nav>
-        <div>
-            <img src="src\assets\gsdr.svg" alt="" className="logop"/>
+      <div>
+        <img src='src\assets\gsdr.svg' alt='' className='logop' />
         <h2>GeekFoods</h2>
-        </div>
-        <div>
-            <a href="">
-                Home
-            </a>
-            <a href="">
-               Quote
-            </a>
-            <a href="">
-               Restaurants
-            </a>
-            <a href="">
-               Foods
-            </a>
-            <a href="">
-                Contact
-            </a>
-        </div>
-        <div>
-            <button className="btnGS">Get Started</button>
-        </div>
+      </div>
+      <div>
+        <Link to='/'>Home</Link>
+        <Link to='/Quotes'>Quote</Link>
+        <Link to='/restaurants'>Restaurants</Link>
+        <Link to=''>Foods</Link>
+        <Link to=''>Contact</Link>
+      </div>
+      <div>
+        <button className='btnGS'>Get Started</button>
+      </div>
     </nav>
-)
+  );
 }
 export default Navbar;
