@@ -1,9 +1,9 @@
-import React from 'react'
+/** @format */
+
+import React from "react";
 
 function Recipe() {
-  return (
-    <div>Recipe</div>
-  )
+  return <div>Recipe</div>;
 }
 
-export default Recipe
+export default Recipe;
