@@ -1,8 +1,10 @@
 /** @format */
 
-import { Link } from "react-router-dom";
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./App.css";
 
-function Navbar() {
+function NavBar() {
   return (
     <nav>
       <div>
@@ -10,11 +12,21 @@ function Navbar() {
         <h2>GeekFoods</h2>
       </div>
       <div>
-        <Link to='/'>Home</Link>
-        <Link to='/Quotes'>Quote</Link>
-        <Link to='/restaurants'>Restaurants</Link>
-        <Link to='/Food'>Foods</Link>
-        <Link to=''>Contact</Link>
+        <NavLink exact to='/' activeClassName='active'>
+          Home
+        </NavLink>
+        <NavLink to='/Quotes' activeClassName='active'>
+          Quote
+        </NavLink>
+        <NavLink to='/restaurants' activeClassName='active'>
+          Restaurants
+        </NavLink>
+        <NavLink to='/Food' activeClassName='active'>
+          Foods
+        </NavLink>
+        <NavLink to='/contact' activeClassName='active'>
+          Contact
+        </NavLink>
       </div>
       <div>
         <button className='btnGS'>Get Started</button>
@@ -22,4 +34,5 @@ function Navbar() {
     </nav>
   );
 }
-export default Navbar;
+
+export default NavBar;
